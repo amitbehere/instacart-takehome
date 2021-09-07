@@ -22,7 +22,10 @@ Latest Node JS version 16.7.0. This code has only been tested on this version.
 - The `npm test` and `npm test:watch are self-explanatory`
 - The `start:production` and `build` scripts are for testing and building production (bundled) code. They are not required to test/review the assignment. Included for completeness.
 
+## Testing running the app on production
+- Run `npm i serve -g` and then `serve dist`,
+
 ## Future improvements/work
-- Full test coverage. I added tests for reducers and 2-3 react components as proof of concept. Integration tests are not written.
-- I haven't written CSS in 3 years or so, so it's suboptimal, but it's on the right track IMO.
+- Full test coverage. I added tests for reducers and 2-3 react components as proof of concept. Need integration tests for loading desserts and adding one via modal.
 - Convert to TypeScript
+- I haven't written CSS in quite a few years, so it is most likely sub-optimal and incomplete.
