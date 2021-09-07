@@ -58,18 +58,21 @@
 }
 
 .modal .close {
-  color: #5b676d;
   position: absolute;
   top: 15px;
   right: 15px;
   height: 35px;
   width: 35px;
   line-height: 35px;
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 28px;
+  font-weight: bolder;
   cursor: pointer;
   background: white;
   text-align: center;
+  background: #525252;
+  color: #fff;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
 }
 
 .modal .input-field input,
@@ -108,4 +111,29 @@
   color: #fff;
   text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
     -1px -1px 0 #000;
+}
+
+/* Phone styles */
+@media (max-width: 375px) {
+  .modal {
+    width: 300px;
+  }
+
+  .modal .input-field label[for="description"] {
+    display: block;
+  }
+}
+
+@media (max-width: 375px) {
+  .modal {
+    width: 240px;
+  }
+
+  .modal form {
+    min-width: 240px;
+  }
+
+  .modal .input-field label[for="description"] {
+    display: block;
+  }
 }

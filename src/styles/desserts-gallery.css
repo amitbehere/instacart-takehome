@@ -90,8 +90,7 @@
 
 .desserts-container li {
   list-style: none;
-  flex-grow: 1;
-  width: 33%;
+  width: 235px;
 }
 
 .desserts-container ul > li:first-child {
@@ -154,9 +153,8 @@ details > summary {
 @media (min-width: 768px) {
   .desserts-container li {
     list-style: none;
-    flex-grow: 1;
-    width: 33%;
-    height: 100%;
+    width: 235px;
+    margin-right: 15px;
   }
 }
 
@@ -212,5 +210,43 @@ details > summary {
   }
 }
 
-/* TODO: Set styles and widths for different devices */
+/* IPhone X styles */
+@media (max-width: 375px) {
+  .desserts-container ul img {
+    display: inline-block;
+    width: 120px;
+    height: 90px;
+  }
+  .desserts-container .list-view-info {
+    width: 200px;
+  }
 
+  .desserts-container .list-view-info {
+    margin-top: 0px;
+  }
+
+  .desserts-container .list-view-info .name-price,
+  .desserts-container .list-view-info .description {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 320px) {
+  .desserts-container ul img {
+    display: inline-block;
+    width: 100px;
+    height: 75px;
+  }
+  .desserts-container .list-view-info {
+    width: 170px;
+  }
+
+  .desserts-container .list-view-info {
+    margin-top: 0px;
+  }
+
+  .desserts-container .list-view-info .name-price,
+  .desserts-container .list-view-info .description {
+    margin-top: 0px;
+  }
+}
