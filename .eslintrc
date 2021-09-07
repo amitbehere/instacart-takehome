@@ -1,0 +1,30 @@
+{
+  "parser": "@babel/eslint-parser",
+  "extends": ["airbnb"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx"]
+      }
+    }
+  },
+  "rules": {
+    "import/prefer-default-export": "warn",
+    "no-undef": "warn",
+    "no-unused-vars": "warn",
+    "jsx-a11y/alt-text": "warn",
+    "jsx-a11y/label-has-associated-control": "warn",
+    "react/prop-types": "warn",
+    "react/button-has-type": "warn",
+    "react/jsx-indent": "warn",
+    "react/jsx-filename-extension": "off",
+    "react/destructuring-assignment": "warn",
+    "react/jsx-indent-props": "warn",
+    "react/no-access-state-in-setstate": "warn"
+  }
+}

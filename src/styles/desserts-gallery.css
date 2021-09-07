@@ -1,0 +1,221 @@
+.desserts-container {
+  width: 768px;
+  margin: auto;
+}
+
+.desserts-container .hero-image {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.desserts-container .hero-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-image .desserts-info div {
+  margin: 10px 5px;
+  color: #fff;
+}
+
+.desserts-container .desserts-info {
+  width: 350px;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.desserts-container .desserts-info .price {
+  padding: 15px;
+  font-size: 22px;
+}
+
+.desserts-container .desserts-info .name {
+  font-weight: bolder;
+  font-size: 28px;
+}
+
+.desserts-container .desserts-info details {
+  font-weight: bolder;
+  font-size: 20px;
+  font-style: initial;
+  margin-top: 10px;
+}
+
+.desserts-container .desserts-info details p {
+  font-size: 16px;
+}
+
+.desserts-container details span.read-more,
+.desserts-container details span.read-less {
+  color: #f00;
+}
+
+.desserts-container details span.read-more,
+.desserts-container details[open] span.trimmed-text {
+  display: inline;
+}
+
+.desserts-container details span.read-less {
+  display: none;
+}
+
+.desserts-container details[open] span.read-more,
+.desserts-container details[open] span.trimmed-text {
+  display: none;
+}
+
+.desserts-container details[open] span.read-less {
+  display: inline;
+}
+
+.desserts-container .hero-image details span {
+  color: #fff;
+}
+
+.desserts-container .desserts-gallery {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.desserts-container ul {
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 15px;
+}
+
+.desserts-container li {
+  list-style: none;
+  flex-grow: 1;
+  width: 33%;
+}
+
+.desserts-container ul > li:first-child {
+  display: none;
+}
+
+.desserts-container ul img {
+  width: 235px;
+  height: 160px;
+  display: inline-block;
+}
+
+details > summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.desserts-container details {
+  display: inline-block;
+  font-style: italic;
+}
+
+.desserts-container .price {
+  display: inline-block;
+  background: #9c4c84;
+  border-radius: 10px;
+  font-style: italic;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 12px;
+}
+
+.desserts-container .name {
+  color: #9c4c84;
+  font-size: 24px;
+  margin-top: 15px;
+}
+
+.desserts-container .description {
+  color: #808080;
+  font-weight: 200;
+  font-size: 15px;
+  padding-right: 10px;
+  font-style: italic;
+}
+
+.desserts-container .list-view-info {
+  margin: 10px 0px;
+  width: 235px;
+}
+
+.desserts-container .list-view-info .name-price,
+.desserts-container .list-view-info .description {
+  margin-bottom: 15px;
+  padding-left: 0px;
+  margin-left: 5px;
+  margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+  .desserts-container li {
+    list-style: none;
+    flex-grow: 1;
+    width: 33%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .desserts-container .hero-image {
+    display: none;
+  }
+
+  .desserts-container ul {
+    display: block;
+  }
+
+  .desserts-container ul img {
+    display: inline-block;
+    width: 235px;
+    height: 160px;
+  }
+
+  .desserts-container li {
+    width: initial;
+    display: flex;
+    margin-top: 15px;
+  }
+
+  .desserts-container .list-view-info {
+    width: 300px;
+    padding-left: 20px;
+  }
+
+  .desserts-gallery .name-price {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    position: relative;
+  }
+
+  .desserts-container .price {
+    order: 2;
+    margin-top: 0px;
+    float: right;
+    position: absolute;
+    right: 10px;
+  }
+
+  .desserts-container .name {
+    order: 1;
+    margin-top: 0px;
+    width: 70%;
+  }
+
+  .desserts-container ul > li:first-child {
+    display: flex;
+  }
+}
+
+/* Only iPhone 5 (landscape mode) */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) and (orientation: landscape) {
+  .desserts-container .name {
+    width: 100px;
+  }
+}
